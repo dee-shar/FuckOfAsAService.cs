@@ -1,7 +1,6 @@
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Threading.Tasks;
 
 namespace FuckOfAsAServiceApi
 {
@@ -21,19 +20,16 @@ namespace FuckOfAsAServiceApi
         public async Task<string> GetVersion()
         {
             var response = await httpClient.GetAsync($"{apiUrl}/version");
-            response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
         public async Task<string> GetOperations()
         {
             var response = await httpClient.GetAsync($"{apiUrl}/operations");
-            response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
         public async Task<string> GetOperationResult(string operationName, string from)
         {
             var response = await httpClient.GetAsync($"{apiUrl}/{operationName}/{from}");
-            response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
     }
