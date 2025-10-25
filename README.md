@@ -5,7 +5,6 @@ Web-API for [foaas.com](https://foass.1001010.com/) an website that provides a m
 ```cs
 using System;
 using FuckOfAsAServiceApi;
-using System.Threading.Tasks;
 
 namespace Application
 {
