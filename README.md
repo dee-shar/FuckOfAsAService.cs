@@ -3,7 +3,6 @@ Web-API for [foaas.com](https://foass.1001010.com/) an website that provides a m
 
 ## Example
 ```cs
-using System;
 using FuckOfAsAServiceApi;
 
 namespace Application
